@@ -1,55 +1,53 @@
-import React from 'react'
-import {FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa'
-import {HiOutlineMail} from 'react-icons/hi'
-import {BsFillPersonLinesFill} from 'react-icons/bs'
-
+import React from "react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 export const Socials = () => {
-
   const links = [
     {
-      id:1,
+      id: 1,
       child: (
         <>
-        LinkedIn <FaLinkedin size={30} />
+          Twitter <FaTwitter size={30} />
         </>
       ),
-      href:'https://linkedin.com',
-      style:'rounded-tr-md'
+      href: "https://twitter.com/Mary_Samuel_",
+      style: "rounded-tr-md",
     },
     {
-      id:2,
+      id: 2,
       child: (
         <>
-        Github <FaGithub size={30} />
+          Github <FaGithub size={30} />
         </>
       ),
-      href:'https://github.com',
+      href: "https://github.com/MarysamuelPel",
     },
     {
-      id:3,
+      id: 3,
       child: (
         <>
-        Mail <HiOutlineMail size={30} />
+          Mail <HiOutlineMail size={30} />
         </>
       ),
-      href:'mailto:samuelmary1617@gmail.com',
-      style:'rounded-tr-md'
+      href: "mailto:samuelmary1617@gmail.com",
+      style: "rounded-tr-md",
     },
     {
-      id:4,
+      id: 4,
       child: (
         <>
-        Resume <BsFillPersonLinesFill size={30} />
+          Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href:'https://linkedin.com',
-      style:'rounded-br-md',
-      download: 'true'
+      href: "https://linkedin.com",
+      style: "rounded-br-md",
+      download: "true",
     },
-  ]
+  ];
   return (
-    <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
+    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
@@ -62,10 +60,10 @@ export const Socials = () => {
           >
             <a
               href={href}
-              className='flex justify-between items-center w-full text-white'
+              className="flex justify-between items-center w-full text-white"
               download={download}
-              target='_blank'
-              rel='noreferrer'
+              target="_blank"
+              rel="noreferrer"
             >
               {child}
             </a>
