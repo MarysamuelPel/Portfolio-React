@@ -33,7 +33,7 @@ const Contact = () => {
           data-aos-duration="1000"
         >
           <form
-            action="https://getform.io/f/841c2b5b-c58a-4b1a-9f80-323b2cddf91b"
+            action="https://getform.io/f/812f8f27-c67a-45b1-aecd-978469464d26"
             method="POST"
             className="flex flex-col w-full md:1/2"
           >
